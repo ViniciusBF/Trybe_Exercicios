@@ -1,0 +1,38 @@
+body {
+    font-size: 16px;
+    font-style: italic;
+
+}
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    width: 65px;
+    color: orange;
+}
+
+.fundo-roxo {
+    background-color: purple;
+}
+
+p {
+    font-weight: 600;
+    font-size: 3em;
+}
+
+li {
+    line-height: 2;
+    text-decoration: underline ;
+}
+
+#marrom {
+    background-color: saddlebrown;
+}
+
+#amarelo {
+    background-color: rgb(211, 211, 19);
+}
+
+#vermelho {
+    background-color: red;
+}
