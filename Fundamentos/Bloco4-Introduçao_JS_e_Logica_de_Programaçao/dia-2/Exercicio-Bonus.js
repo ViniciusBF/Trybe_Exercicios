@@ -1,17 +1,17 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let Termos = numbers.length
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let Termos = numbers.length
 
 
-for (let index = Termos - 1; index > 0; index -= 1) {
-  for (let i2 = 0; i2 < index; i2 += 1) {
-    if (numbers[i2] > numbers[i2 + 1]) {
-      let position = numbers[i2];
-      numbers[i2] = numbers[i2 + 1];
-      numbers[i2 + 1] = position;
-    }
-  }
-}
-console.log(numbers)
+// for (let index = Termos - 1; index > 0; index -= 1) {
+//   for (let i2 = 0; i2 < index; i2 += 1) {
+//     if (numbers[i2] > numbers[i2 + 1]) {
+//       let position = numbers[i2];
+//       numbers[i2] = numbers[i2 + 1];
+//       numbers[i2 + 1] = position;
+//     }
+//   }
+// }
+// console.log(numbers)
 
 // // // // // // // // FIM DO EXERCICIO 1
 
