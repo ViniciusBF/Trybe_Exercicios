@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function criarTag(param1, param2) {
+        let criacao = document.createElement(param1);
+        let test = document.querySelector(param2);
+        test.appendChild(criacao);
+      }
+      function adicionarTexto(param1, param2, param3) {
+        let resultado = document.querySelectorAll(param1)[param3];
+        resultado.innerText = param2;
+      }
+      criarTag('h1', 'body');
+      adicionarTexto('h1', 'teste', 0);
+
+      function adicionaClasse(param1, param2, param3) {
+        let elemento = document.querySelectorAll(param1)[param3];
+        elemento.classList.add(param2)
+      }
+      criarTag('main', 'body');
+      adicionaClasse('main', 'main-content', 0);
+
+      criarTag('section', 'main');
+      adicionaClasse('section', 'center-content', 0);
+
+      criarTag('p', '.center-content');
+      adicionarTexto('p', 'paragrafo', 0);
+
+      criarTag('section', 'main');
+      adicionaClasse('section', 'left-content', 1);
+
+      criarTag('section', 'main');
+      adicionaClasse('section', 'right-content', 2);
+
+      function adicionaSrc(param1, param2, param3) {
+        let elemento = document.querySelectorAll(param1)[param3];
+        elemento.src = param2;
+      }
+      criarTag('img', '.left-content');
+      adicionaClasse('img', 'small-image', 0);
+      adicionaSrc('.small-image', 'https://picsum.photos/200', 0);
+
+      let numeros =['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      criarTag('ul', '.right-content');
+      for (let i = 0; i < 10; i += 1) {
+        criarTag('li', 'ul');
+        adicionarTexto('li', numeros[i], i);
+      }
+
+      for (let i = 0; i < 3; i += 1) {
+        criarTag('h3', 'main',);
+      }
+
+    </script>
+  </body>
+</html>
