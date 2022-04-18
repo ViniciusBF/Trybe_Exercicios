@@ -107,6 +107,32 @@
         criarTag('h3', 'main',);
       }
 
+      //parte 2
+      adicionaClasse('h1', 'title', 0);
+
+      for (let i = 0; i < 3; i += 1) {
+        adicionaClasse('h3', 'description', i);
+      }
+
+      let remover = document.querySelector('.left-content');
+      document.querySelector('main').removeChild(remover);
+
+      let centralizar = document.querySelector('.right-content');
+      centralizar.style.marginRight = "auto";
+
+      let sectionCenter = document.querySelector('.center-content');
+      sectionCenter.parentElement.style.backgroundColor = "green";
+
+      let listaUl = document.querySelector('ul');
+      let lista = document.querySelectorAll('li');
+      for(let i = 0; i < lista.length; i += 1) {
+        let termo = lista[i];
+
+        if(termo.innerText.includes('nove') || termo.innerText.includes('dez')) {
+          listaUl.removeChild(termo);
+        }
+      }
+
     </script>
   </body>
 </html>
