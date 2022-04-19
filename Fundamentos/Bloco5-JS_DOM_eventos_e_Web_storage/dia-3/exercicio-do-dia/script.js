@@ -159,10 +159,10 @@ function colorDays() {
 }
 
 function compromissos() {
-  let compromisso = document.getElementsByClassName('input-container')[0];
+  let compromisso = document.getElementsByClassName('task-list')[0];
   let valor = event.target.value;
   let key = event.key;
-  let newCompromisso = document.createElement('p');
+  let newCompromisso = document.createElement('li');
   newCompromisso.innerText = valor;
   if (key == 'Enter') {
     compromisso.appendChild(newCompromisso);
@@ -175,9 +175,9 @@ let input = document.getElementById('task-input');
 input.addEventListener('keydown', compromissos);
 
 function compromissoBotton() {
-  let compromisso = document.getElementsByClassName('input-container')[0];
+  let compromisso = document.getElementsByClassName('task-list')[0];
   let valor = document.getElementById('task-input').value;
-  let newCompromisso = document.createElement('p');
+  let newCompromisso = document.createElement('li');
   newCompromisso.innerText = valor;
   if (valor.length <= 0) {
     alert('ADICIONAR');
