@@ -157,3 +157,33 @@ function colorDays() {
     event.target.style.color = tarefaColor;
   }
 }
+
+function compromissos() {
+  let compromisso = document.getElementsByClassName('input-container')[0];
+  let valor = event.target.value;
+  let key = event.key;
+  let newCompromisso = document.createElement('p');
+  newCompromisso.innerText = valor;
+  if (key == 'Enter') {
+    compromisso.appendChild(newCompromisso);
+  }
+  if (key == 'Enter' && valor.length <= 0) {
+    alert('ADICIONAR');
+  }
+}
+let input = document.getElementById('task-input');
+input.addEventListener('keydown', compromissos);
+
+function compromissoBotton() {
+  let compromisso = document.getElementsByClassName('input-container')[0];
+  let valor = document.getElementById('task-input').value;
+  let newCompromisso = document.createElement('p');
+  newCompromisso.innerText = valor;
+  if (valor.length <= 0) {
+    alert('ADICIONAR');
+  } else {
+    compromisso.appendChild(newCompromisso);
+  }
+}
+let botaoId = document.getElementById('btn-add');
+botaoId.addEventListener('click', compromissoBotton);
