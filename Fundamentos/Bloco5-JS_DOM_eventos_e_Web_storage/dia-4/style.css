@@ -1,0 +1,9 @@
+.edicoes {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid gray;
+  width: 200px;
+  text-align: center;
+  background-color: white;
+}
