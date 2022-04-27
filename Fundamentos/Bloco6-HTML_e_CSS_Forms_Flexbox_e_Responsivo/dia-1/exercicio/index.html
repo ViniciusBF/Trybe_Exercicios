@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="fora">
+      <header>
+        <h1>TrybeTrip</h1>
+      </header>
+      <main>
+        <form action="" method="get">
+          <div class="container">
+            <section class="section">
+              <div>
+                <label class="pedindo-dados" for="nome">Nome Completo:</label>
+                <input autofocus
+                  id="nome"
+                  class="dados"
+                  type="text"
+                  minlength="10"
+                  maxlength="40"
+                />
+              </div>
+              <div>
+                <label class="pedindo-dados" for="email">E-mail:</label>
+                <input
+                  id="email"
+                  class="dados"
+                  type="email"
+                  minlength="10"
+                  maxlength="50"
+                />
+              </div>
+            </section>
+            <section class="section">
+              <p>Destino Preferido:</p>
+              <input id="cidade" name="destino" type="radio" />
+              <label for="cidade">Cidade</label>
+              <input id="campo" name="destino" type="radio" />
+              <label for="campo">Campo</label>
+              <input id="praia" name="destino" type="radio" />
+              <label for="praia">Praia</label>
+              <input id="montanha" name="destino" type="radio" />
+              <label for="montanha">Montanhas</label>
+            </section>
+            <section class="section">
+              <p>
+                Por que você deveria ser a pessoa desenvolvedora a ganhar o
+                concurso TrybeTrip?
+              </p>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                maxlength="500"
+              ></textarea>
+            </section>
+            <section class="section">
+              <label for="date">Qual a melhor data para realizar sua viagem?</label>
+              <input id="date" type="date" />
+            </section>
+            <section class="section">
+              <div>
+                <input id="check1" type="checkbox" />
+                <label for="check1"
+                >Gostaria de receber outras incríveis oportunidades oferecidas
+                pela Trybe?</label
+                >
+              </div>
+              <div>
+                <input id="check2" type="checkbox" />
+                <label for="check2"
+                >Concordo que imagens das minhas férias poderão ser usadas na
+                divulgação de concursos futuros.</label
+                >
+              </div>
+            </section>
+          </div>
+          <button disabled type="submit" id="enviar">Enviar</button>
+          <button type="reset" id="apagar">Apagar</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
