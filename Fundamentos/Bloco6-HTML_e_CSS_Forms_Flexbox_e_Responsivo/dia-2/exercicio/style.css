@@ -1,0 +1,17 @@
+body {
+  width: 60%;
+  margin: 40px auto;
+  background-color: rgb(240, 234, 234);
+}
+
+textarea {
+  resize: none;
+}
+
+#date {
+  width: 40%;
+}
+
+main, header {
+  background-color: whitesmoke;
+}
