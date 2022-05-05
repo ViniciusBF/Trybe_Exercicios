@@ -5,3 +5,195 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+@media screen and (max-width: 639px) {
+  body {
+    background-color: #f2f2f2;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .container-aside {
+    display: flex;
+  }
+
+  aside h2 {
+    text-align: center;
+  }
+
+  .aside-one li {
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: x-large;
+    text-align: center;
+  }
+
+  article {
+    width: 98%;
+    margin: auto;
+    text-align: justify;
+  }
+
+  article p {
+    line-height: 18px;
+  }
+
+  footer {
+    margin: auto;
+    background-color: #c2c2c2;
+  }
+
+  footer h3 {
+    text-align: center;
+  }
+
+  footer p {
+    text-align: justify;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  body {
+    background-color: #403c3c;
+    color: white;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: green;
+    padding: 0 10px;
+  }
+
+  header nav {
+    width: 50%;
+  }
+
+  header ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .container-aside {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  aside p {
+    line-height: 20px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  article p {
+    padding: 0 10px;
+    text-align: justify;
+    line-height: 20px;
+  }
+
+  footer {
+    background-color: #036b52;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #f2f2f2;
+    color: black;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    padding: 0 35px;
+    font-size: 20px;
+  }
+
+  header nav {
+    width: 50%;
+  }
+
+  header ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-aside {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    background-color: #403c3c;
+    color: white;
+    margin-left: 10px;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px 5px;
+  }
+
+  aside p {
+    line-height: 30px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  article p {
+    font-size: 20px;
+    padding: 0 10px;
+    text-align: justify;
+    line-height: 25px;
+  }
+
+  footer {
+    background-color: blue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
